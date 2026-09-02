@@ -1,0 +1,22 @@
+.go-to-top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #061067;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+.go-to-top-btn:hover {
+  background-color: #030b3f;
+  transform: translateY(-3px);
+}

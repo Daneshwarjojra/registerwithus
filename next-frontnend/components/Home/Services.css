@@ -1,0 +1,242 @@
+.section-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .service-head {
+    text-align: center;
+    margin-bottom: 60px;
+    ;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #030c65;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .service-head {
+    text-align: center;
+    margin-bottom: 60px;
+    ;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #030c65;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .service-head {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .service-head {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .service-head {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+  }
+}
+.section-title span {
+  position: relative;
+  display: inline-block;
+}
+.section-title span::after {
+  content: '';
+  position: absolute;
+  bottom: 48px;
+  left: 5px;
+  height: 18px;
+  width: 100%;
+  background: url(/img/Element.png) no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+.services-section {
+  background: #f4f7fb;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #222;
+}
+.highlight-text {
+  color: #4b3df0;
+}
+.modern-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 30px 20px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.4s ease;
+}
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background: #061067 !important;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.service-title {
+  font-weight: 600;
+  color: #333;
+}
+.animated-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  text-align: left;
+  padding-top: 10px;
+}
+.list-item {
+  font-size: 0.95rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  transition: all 0.4s ease;
+}
+.list-item i {
+  font-size: 0.9rem;
+  color: #999;
+}
+/* Large screens only: show 2, reveal 3 on hover */
+@media (min-width: 992px) {
+  .modern-card {
+    height: 310px;
+  }
+  .modern-card:hover {
+    height: 440px;
+  }
+  .list-item.extra {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+  }
+  .modern-card:hover .list-item.extra {
+    max-height: 40px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .modern-card:hover .know-more-btn {
+    opacity: 1;
+  }
+  .modern-card:hover .hover-indicator {
+    opacity: 0;
+  }
+}
+/* Medium and below: show all */
+@media (max-width: 991.98px) {
+  .list-item.extra {
+    max-height: 100%;
+    opacity: 1;
+    transform: none;
+  }
+  .hover-indicator,
+  .know-more-btn {
+    display: none !important;
+  }
+}
+.hover-indicator {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.hover-indicator i {
+  margin-left: 5px;
+  font-size: 0.75rem;
+}
+/* Know More */
+.know-more-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* Same as before up to .list-item etc... */
+/* 👇 lg only: first 2 items show, rest on hover */
+@media (min-width: 992px) {
+  .modern-card {
+    transition: all 0.3s ease;
+  }
+  .list-item.extra {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+  }
+  .modern-card:hover .list-item.extra {
+    max-height: 40px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hover-indicator {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #888;
+  }
+  .modern-card:hover .hover-indicator {
+    display: none;
+  }
+  .know-more-btn {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .modern-card:hover .know-more-btn {
+    opacity: 1;
+  }
+}
+/* 👇 below lg (md/sm): show all items, hide hover and know more */
+@media (max-width: 991.98px) {
+  .list-item.extra {
+    max-height: 100%;
+    opacity: 1;
+    transform: none;
+  }
+  .hover-indicator,
+  .know-more-btn {
+    display: none !important;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "registerwithus-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "WATCHPACK_POLLING=true next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "postinstall": "mkdir -p public/webfonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/* public/webfonts/"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.26.25",
+    "swiper": "^14.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.1",
+    "tailwindcss": "^4.3.3"
+  }
+}

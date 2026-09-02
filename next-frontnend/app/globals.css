@@ -1,0 +1,46 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/*
+  Tailwind v4 emits `.collapse { visibility: collapse }` in the utilities layer
+  after this file's unlayered rules, so a plain override never wins.
+  Keep Bootstrap's display-based collapse and force content to stay visible.
+*/
+@layer utilities {
+  .collapse {
+    visibility: visible !important;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --theme-blue: #061067;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-theme: var(--theme-blue);
+  --font-sans: var(--font-montserrat);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden !important;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+}
+
+.theme-color {
+  color: #061067 !important;
+}
+
+.theme-bg-color {
+  background-color: #061067 !important;
+}

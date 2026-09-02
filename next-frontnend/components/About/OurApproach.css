@@ -1,0 +1,29 @@
+.our-approach-section {
+    background-image: url('/img/Apps.png');
+    background-size: cover;
+    background-position: center;
+}
+.our-approach-section.bg-white {
+    background-image: none !important;
+    background-color: #fff !important;
+}
+.feature-cards {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    height: 100% !important;
+}
+.feature-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.feature-icons {
+    font-size: 2rem;
+    color: #007bff;
+    min-width: 40px;
+}

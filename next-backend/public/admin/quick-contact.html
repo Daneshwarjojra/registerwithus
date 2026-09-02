@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords"
+		content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/pages-blank.html" />
+
+	<title>RWU | Contact Data</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<style>
+		.pagination {
+			display: flex;
+			gap: 8px;
+		}
+
+		.pagination .page-item {
+			list-style: none;
+		}
+
+		.pagination .page-link {
+			border-radius: 50%;
+			width: 38px;
+			height: 38px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 14px;
+			border: 1px solid #ddd;
+			color: #0d6efd;
+			transition: all 0.3s ease;
+			text-decoration: none;
+		}
+
+		.pagination .page-link:hover {
+			background-color: #f1f1f1;
+		}
+
+		.pagination .page-item.active .page-link {
+			background-color: #0d6efd;
+			color: #fff;
+			border-color: #0d6efd;
+		}
+
+		.pagination .page-item.disabled .page-link {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+
+		#paginationInfo {
+			font-size: 0.9rem;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+					<span class="align-middle">Register With US</span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="index.html">
+							<i class="align-middle" data-feather="sliders"></i> <span
+								class="align-middle">Dashboard</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="admin-data.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Admin
+								Data</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="blogs-category.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Blogs
+								Category</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="blogs-data.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Blogs
+								Data</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="quick-contact.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Contact
+								Forms</span>
+						</a>
+					</li>
+
+					<!-- <li class="sidebar-item">
+						<a class="sidebar-link" href="expert-requests.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Expert
+								Requests</span>
+						</a>
+					</li> -->
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0"
+								aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 New Messages
+									</div>
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-5.jpg"
+													class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Vanessa Tucker</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu
+													tortor.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-2.jpg"
+													class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">William Harris</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod
+													vitae.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-4.jpg"
+													class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Christina Mason</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.
+												</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-3.jpg"
+													class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Sharon Lessman</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed,
+													posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all messages</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+								data-bs-toggle="dropdown">
+								<i class="align-middle" data-feather="settings"></i>
+							</a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+								data-bs-toggle="dropdown">
+								<img src="img/avatars/new-admin-logo.png" class="avatar img-fluid rounded me-1"
+									alt="Admin" /> <span class="text-dark">Admin</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="#" id="logoutBtn">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3">Quick Contact And Contact us Data</h1>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="d-flex justify-content-between align-items-center mb-3">
+								<div class="d-flex align-items-center">
+									<label class="me-2">Show</label>
+									<select id="rowsPerPageSelect" class="form-select form-select-sm"
+										style="width: auto;">
+										<option value="5">5</option>
+										<option value="10" selected>10</option>
+										<option value="25">25</option>
+										<option value="50">50</option>
+									</select>
+									<label class="ms-2">entries</label>
+								</div>
+								<div>
+									<input type="text" id="searchInput" class="form-control form-control-sm"
+										placeholder="Search...">
+								</div>
+							</div>
+
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Name</th>
+										<th>Email</th>
+										<th>Phone</th>
+										<th>Message</th>
+										<th>Form Type</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+								<tbody id="dataTableBody">
+									<tr>
+										<td colspan="7" class="text-center">Loading...</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="d-flex justify-content-between align-items-center mt-3">
+								<div id="paginationInfo" class="text-muted"></div>
+								<nav>
+									<ul class="pagination mb-0 pagination-sm" id="paginationControls"></ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a class="text-muted" href="javascript:void(0)"><strong>Register With Us</strong></a> - <a class="text-muted"
+									href="https://techgeering.in/" target="_blank"><strong> &copy; Techgeering Solutions Private Limited</strong></a>
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<!-- <li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Terms</a>
+								</li> -->
+								<li class="list-inline-item">
+									<a class="text-muted" style="cursor:default;" href="javascript:void(0)" target="_blank">Version 1.0</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="utils/api.js"></script>
+	<script src="js/app.js"></script>
+
+	<script>
+    let rowsPerPage = 10;
+    let currentPage = 1;
+    let tableData = [];
+    let filteredData = [];
+
+    // Load Data with pagination
+    async function loadData() {
+        try {
+            const res = await fetch('/api/submit');
+            const data = await res.json();
+            tableData = data;
+            filteredData = [...tableData]; // Initially show all data
+            renderTable();
+            renderPagination();
+        } catch (error) {
+            console.error("Error loading data:", error);
+            document.getElementById("dataTableBody").innerHTML =
+                `<tr><td colspan="7" class="text-danger text-center">Failed to load data</td></tr>`;
+        }
+    }
+
+    // Render Table
+    function renderTable() {
+        const tbody = document.getElementById("dataTableBody");
+        tbody.innerHTML = "";
+
+        const start = (currentPage - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+        const paginatedData = filteredData.slice(start, end);
+
+        if (paginatedData.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="7" class="text-center">No matching records found</td></tr>`;
+            document.getElementById("paginationInfo").innerText = "";
+            return;
+        }
+
+        paginatedData.forEach((item, index) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${start + index + 1}</td>
+                <td>${item.user_name || ''}</td>
+                <td>${item.user_email || ''}</td>
+                <td>${item.user_phone || ''}</td>
+                <td>${item.message || ''}</td>
+                <td>${item.form_type || ''}</td>
+                <td>${new Date(item.created_at).toLocaleString()}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        document.getElementById("paginationInfo").innerText =
+            `Showing ${start + 1}-${Math.min(end, filteredData.length)} of ${filteredData.length}`;
+    }
+
+    // Render Pagination
+    function renderPagination() {
+        const paginationControls = document.getElementById("paginationControls");
+        paginationControls.innerHTML = "";
+
+        const totalPages = Math.ceil(filteredData.length / rowsPerPage);
+
+        // Previous Button
+        const prevLi = document.createElement("li");
+        prevLi.className = `page-item ${currentPage === 1 ? "disabled" : ""}`;
+        prevLi.innerHTML = `<a class="page-link" href="#">‹</a>`;
+        prevLi.onclick = () => changePage(currentPage - 1);
+        paginationControls.appendChild(prevLi);
+
+        // Page Numbers
+        for (let i = 1; i <= totalPages; i++) {
+            const li = document.createElement("li");
+            li.className = `page-item ${i === currentPage ? "active" : ""}`;
+            li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+            li.onclick = () => changePage(i);
+            paginationControls.appendChild(li);
+        }
+
+        // Next Button
+        const nextLi = document.createElement("li");
+        nextLi.className = `page-item ${currentPage === totalPages ? "disabled" : ""}`;
+        nextLi.innerHTML = `<a class="page-link" href="#">›</a>`;
+        nextLi.onclick = () => changePage(currentPage + 1);
+        paginationControls.appendChild(nextLi);
+    }
+
+    function changePage(page) {
+        const totalPages = Math.ceil(filteredData.length / rowsPerPage);
+        if (page < 1 || page > totalPages) return;
+        currentPage = page;
+        renderTable();
+        renderPagination();
+    }
+
+    // Search Filter
+    document.getElementById("searchInput").addEventListener("input", function () {
+        const query = this.value.toLowerCase();
+        filteredData = tableData.filter(item =>
+            (item.user_name || "").toLowerCase().includes(query) ||
+            (item.user_email || "").toLowerCase().includes(query) ||
+            (item.user_phone || "").toLowerCase().includes(query) ||
+            (item.message || "").toLowerCase().includes(query) ||
+            (item.form_type || "").toLowerCase().includes(query)
+        );
+        currentPage = 1;
+        renderTable();
+        renderPagination();
+    });
+
+    // Rows Per Page
+    document.getElementById("rowsPerPageSelect").addEventListener("change", function () {
+        rowsPerPage = parseInt(this.value);
+        currentPage = 1;
+        renderTable();
+        renderPagination();
+    });
+
+    // Logout functionality
+    document.getElementById("logoutBtn").addEventListener("click", async (e) => {
+        e.preventDefault();
+        try {
+            const res = await fetch("/api/admin/logout", { method: "POST" });
+            const result = await res.json();
+
+            if (result.success) {
+                window.location.replace("/admin/login.html");
+            } else {
+                alert("Logout failed!");
+            }
+        } catch (err) {
+            console.error("Logout error:", err);
+            alert("Logout failed: " + err.message);
+        }
+    });
+
+    // Check authentication on page load
+    window.addEventListener("DOMContentLoaded", async () => {
+        const res = await fetch('/api/admin/check-auth');
+        const data = await res.json();
+        if (!data.authenticated) {
+            window.location.replace('/admin/login.html');
+        }
+        await loadData();
+    });
+</script>
+
+
+
+</body>
+
+</html>

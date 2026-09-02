@@ -1,0 +1,82 @@
+.background-col {
+  background-color: #061068;
+}
+.section-title {
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+.section-title .overlap-conte::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  height: 21px;
+  width: 100%;
+  background: url(/img/Element.png) no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+.section-title span {
+  position: relative;
+  display: inline-block;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.client-logo {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  background-color: white;
+}
+.client-logo:hover {
+  transform: scale(1.05);
+}
+.client-logo {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  margin: auto;
+}
+.client-logo:hover {
+  transform: scale(1.1);
+}
+.slick-prev-btn,
+.slick-next-btn {
+  background: #061068;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 26%;
+  z-index: 2;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.slick-prev-btn:hover,
+.slick-next-btn:hover {
+  background: #0a1a80;
+}
+.slick-prev-btn {
+  left: -0px;
+}
+.slick-next-btn {
+  right: -0px;
+}
+.slick-prev-btn i,
+.slick-next-btn i {
+  font-size: 18px;
+}

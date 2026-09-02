@@ -1,0 +1,80 @@
+.card-title {
+  font-weight: 600;
+}
+.card-text {
+  color: #6c757d;
+}
+.category {
+  color: #6366f1;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.author-img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 4px 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  transition: border-color 0.2s ease;
+}
+.search-container:focus-within {
+  border-color: #007bff;
+}
+.search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  font-size: 16px;
+  background: transparent;
+}
+.search-container .icon {
+  font-size: 16px;
+  color: #777;
+  margin-right: 8px;
+}
+.search-container .clear-btn {
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.search-container .clear-btn:hover {
+  color: #0056b3;
+}
+.card-body small {
+  color: #6c757d;
+}
+.text-primary {
+  color: (6 16 103) !important
+}
+.card-img-top {
+  height: 200px;/* 🔒 Fixed height */
+  object-fit: cover;/* 🧩 Ensures the image fills the area without distortion */
+  width: 100%;
+}
+.no-blogs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  border: 1px dashed #ccc;
+  transition: all 0.3s ease-in-out;
+}
+.no-blogs-container img {
+  filter: grayscale(40%);
+}
+.no-blogs-container:hover {
+  background-color: #f1f3f6;
+}

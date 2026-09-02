@@ -1,0 +1,55 @@
+.swiper-wrapper-relative {
+  position: relative;
+}
+.swiper-custom-nav-inside {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  padding: 10px;
+}
+.swiper-button-custom {
+  background-color: rgba(0, 31, 112, 0.7);
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-custom:hover {
+  background-color: rgba(0, 31, 112, 0.9);
+}
+.testimonial-card {
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #fff;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid #0000001f;
+  height: 100%;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.quote-icon {
+  font-size: 5rem;
+  color: #001f70;
+}
+.client-img {
+  width: 80px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.client-name {
+  font-weight: bold;
+  color: #001f70;
+}

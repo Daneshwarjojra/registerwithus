@@ -1,0 +1,40 @@
+.about-us-section {
+  background-color: #f8f9fa;
+}
+.about-us-image {
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.about-us-heading {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #030c65 !important;
+}
+.about-us-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.about-us-btn {
+  background-color: #030c65 !important;
+  color: #fff !important;
+  padding: 10px 24px;
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+.about-us-btn:hover {
+  background-color: #a1a9f4 !important;
+  color: #fff !important;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-us-section {
+    text-align: center;
+  }
+  .about-us-heading {
+    font-size: 2rem;
+  }
+}

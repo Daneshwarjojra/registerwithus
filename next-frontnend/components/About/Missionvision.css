@@ -1,0 +1,35 @@
+.mission-vision-section {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  .img-main {
+    width: 100px;
+    height: 100px;
+  }
+  .mission-text h5,
+  .vision-text h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  .mission-text p,
+  .vision-text p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  .vision-text p {
+    display: flex;
+    text-align: end !important;
+  }
+  @media (max-width: 768px) {
+    .mission-text,
+    .vision-text {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  .mission-vision {
+    height: 200px !important;
+  }

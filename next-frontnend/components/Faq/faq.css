@@ -1,0 +1,22 @@
+.section-title {
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  .section-title .overlap-conte::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 111px;
+    height: 21px;
+    width: 100%;
+    background: url(/img/Element.png) no-repeat center;
+    background-size: contain;
+    z-index: -1;
+  }
+  .section-title span {
+    position: relative;
+    display: inline-block;
+  }

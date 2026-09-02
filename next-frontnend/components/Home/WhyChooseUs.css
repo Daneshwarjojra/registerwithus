@@ -1,0 +1,25 @@
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100% !important;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.feature-icon {
+    font-size: 2rem;
+    color: #007bff;
+}
+.whychooseus-section {
+      background-image: url('/img/Apps.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.whychooseus-section.bg-white {
+  background-image: none !important;
+  background-color: #fff !important;
+}

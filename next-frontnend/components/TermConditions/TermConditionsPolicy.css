@@ -1,0 +1,33 @@
+.privacy-policy {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+.privacy-policy h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+.privacy-policy .section h4 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.privacy-policy p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+.custom-list li {
+  margin-bottom: 10px;
+  font-size: 15.5px;
+}
+.privacy-policy .btn-primary {
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+}
+.icon-color {
+  color: #0a0a83;
+}
