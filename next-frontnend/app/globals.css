@@ -44,3 +44,8 @@ body {
 .theme-bg-color {
   background-color: #061067 !important;
 }
+
+.btn {
+  --bs-btn-bg: #061067 !important;
+  --bs-btn-color: #fff !important;
+}
