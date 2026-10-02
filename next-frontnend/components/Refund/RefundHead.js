@@ -2,12 +2,12 @@
 
 function RefundHead() {
     return (
-        <section className="about-section mt-5">
+        <section className="about-section my-25">
             <div className="about-overlay">
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
                         {/* Left Side Content */}
-                        <div className="col-lg-7 text-white about-hero-content">
+                        <div className="col-lg-7 text-black about-hero-content">
                             <h1 className="fw-bold mb-3">Refund Policy</h1>
                             <p className="fs-5">
                                 We thank you and appreciate your service or product purchase with us on our Website www.registerwithus.in (hereinafter referred to as “register with us” or “RWU”). Please read this policy and RWU terms and conditions carefully as they will give you important information and guidelines about your rights and obligations as our customer, with respect to any purchase or service we provide to you.
@@ -19,7 +19,7 @@ function RefundHead() {
                         {/* Right Side Form */}
                         <div className="col-lg-5">
                             <div className="styled-form-containers">
-                                <p className='text-white' >Submit your details to get an instant <span className='text-theme' >All-inclusive</span> Quote to your email and a <span className='text-theme' >FREE</span> Expert Consultation</p>
+                                <p className='text-black' >Submit your details to get an instant <span className='text-theme' >All-inclusive</span> Quote to your email and a <span className='text-theme' >FREE</span> Expert Consultation</p>
                                 <form>
                                     <input type="text" className="form-control custom-inputs mb-3" placeholder="Your Name" required />
                                     <div className="input-group mb-3">
