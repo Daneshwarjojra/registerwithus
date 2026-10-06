@@ -231,8 +231,8 @@
                                         <div class="row g-3">
                                             <div class="col-md-4">
                                                 <label>Blog Category</label>
-                                                <select class="form-select" id="addCategory" name="category_id">
-                                                    <option selected disabled>Select Category</option>
+                                                <select class="form-select" id="addCategory" name="category_id" required>
+                                                    <option value="" selected disabled>Select Category</option>
                                                 </select>
                                             </div>
 
@@ -483,8 +483,9 @@
                     const res = await fetch("/api/blogs?type=category");
                     const data = await res.json();
                     selectEl.innerHTML = "";
-                    if (data.success) {
+                    if (data.success && Array.isArray(data.categories)) {
                         const defaultOption = document.createElement("option");
+                        defaultOption.value = "";
                         defaultOption.textContent = "Select Category";
                         defaultOption.disabled = true;
                         defaultOption.selected = true;
@@ -496,6 +497,10 @@
                             option.textContent = cat.name;
                             selectEl.appendChild(option);
                         });
+
+                        if (data.categories.length === 1) {
+                            selectEl.value = String(data.categories[0].id);
+                        }
                     }
                 } catch (err) {
                     Swal.fire("Error", "Failed to load categories", "error");
@@ -534,9 +539,16 @@
             // ➕ Submit New Blog
             addBlogForm.addEventListener("submit", async (e) => {
                 e.preventDefault();
+                const categoryId = addCategorySelect.value;
+                if (!categoryId || Number.isNaN(Number(categoryId))) {
+                    Swal.fire("Error", "Please select a blog category", "error");
+                    addCategorySelect.focus();
+                    return;
+                }
                 try {
                     document.getElementById("hiddenDescription").value = quill.root.innerHTML;
                     const formData = new FormData(addBlogForm);
+                    formData.set("category_id", categoryId);
                     const res = await fetch("/api/blogs?type=blogs", { method: "POST", body: formData });
                     const result = await res.json();
                     if (result.success) {

@@ -124,7 +124,10 @@ export async function POST(req: Request) {
     const title = fields.title?.[0] || fields.title;
     const slug = fields.slug?.[0] || fields.slug;
     const description = fields.description?.[0] || fields.description;
-    const categoryId = Number(fields.category_id?.[0] || fields.category_id);
+    const categoryRaw = Array.isArray(fields.category_id)
+      ? fields.category_id[0]
+      : fields.category_id;
+    const categoryId = Number(String(categoryRaw ?? "").trim());
     const dateValue = fields.date?.[0] || fields.date;
 
     // ✅ Validations
