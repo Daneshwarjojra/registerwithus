@@ -288,6 +288,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const logoutBtn = document.getElementById("logoutBtn");
     let bsModal = new bootstrap.Modal(modalElement);
 
+    function removeModalBackdrop() {
+        document.querySelectorAll(".modal-backdrop").forEach((el) => el.remove());
+        document.body.classList.remove("modal-open");
+        document.body.style.removeProperty("overflow");
+        document.body.style.removeProperty("padding-right");
+    }
+
+    function hideCategoryModal() {
+        return new Promise((resolve) => {
+            if (!modalElement.classList.contains("show")) {
+                removeModalBackdrop();
+                resolve();
+                return;
+            }
+            modalElement.addEventListener("hidden.bs.modal", () => {
+                removeModalBackdrop();
+                resolve();
+            }, { once: true });
+            bsModal.hide();
+        });
+    }
+
     // ✅ Real-time input restriction: only alphabets and whitespace
     categoryInput.addEventListener("input", (e) => {
         e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, "");
@@ -335,10 +357,11 @@ form.addEventListener("submit", async (e) => {
         const data = await res.json();
         console.log("Fetched categories:", data);
         if (data.success) {
-            bsModal.hide();
             form.reset();
             categoryIdInput.value = "";
-            Swal.fire("Success", `Category ${id ? "updated" : "added"} successfully`, "success");
+            await hideCategoryModal();
+            await Swal.fire("Success", `Category ${id ? "updated" : "added"} successfully`, "success");
+            removeModalBackdrop();
             fetchCategories();
         } else {
             Swal.fire("Error", data.message || "Failed to save", "error");

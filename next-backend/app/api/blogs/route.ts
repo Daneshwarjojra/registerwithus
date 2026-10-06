@@ -7,10 +7,9 @@ import fs from "fs/promises";
 import formidable from "formidable";
 import { Readable } from "stream";
 import db from "@/utils/db";
+import { ensureBlogUploadDir, safeBlogFilename } from "@/utils/blogUploads";
 
 export const config = { api: { bodyParser: false } };
-
-const uploadDir = path.join(process.cwd(), "/public/uploads/blogs");
 
 // ✅ Regex rules
 const nameRegex = /^[A-Za-z\s]+$/;
@@ -21,19 +20,19 @@ async function saveFile(file: any) {
   const actualFile = Array.isArray(file) ? file[0] : file;
   if (!actualFile) throw new Error("File not found");
 
+  const uploadDir = await ensureBlogUploadDir();
+
   if (actualFile.filepath) {
-    const filename = Date.now() + "_" + actualFile.originalFilename;
+    const filename = safeBlogFilename(actualFile.originalFilename || "image");
     const filepath = path.join(uploadDir, filename);
-    await fs.mkdir(uploadDir, { recursive: true });
     await fs.writeFile(filepath, await fs.readFile(actualFile.filepath));
     return `/uploads/blogs/${filename}`;
   }
 
   if (actualFile instanceof File) {
     const buffer = Buffer.from(await actualFile.arrayBuffer());
-    const filename = Date.now() + "_" + actualFile.name;
+    const filename = safeBlogFilename(actualFile.name || "image");
     const filepath = path.join(uploadDir, filename);
-    await fs.mkdir(uploadDir, { recursive: true });
     await fs.writeFile(filepath, buffer);
     return `/uploads/blogs/${filename}`;
   }
